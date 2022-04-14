@@ -1,6 +1,7 @@
 const { defineConfig } = require('@vue/cli-service')
 module.exports = defineConfig({
-  transpileDependencies: true
+  transpileDependencies: true,
+  lintOnSave: false
 })
 
 // 下面是自定义配置别名
@@ -16,5 +17,6 @@ module.exports={
         'views':'@/views',
       }
     }
-  }
+  },
+  lintOnSave: false
 }
